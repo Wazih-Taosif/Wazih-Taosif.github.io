@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  background-color: white;
+  color: black;
+  font-family: "Tinos", serif;
+}
+a {
+  color: white;
+}
+nav {
+  background-color: lightslategray;
+  margin-left: 888px;
+  padding: 1%;
+  font-size: 30px;
+}
+h1 {
+    font-size: 63px;
+}
