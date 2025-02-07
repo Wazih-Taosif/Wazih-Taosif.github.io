@@ -12,32 +12,39 @@
       .my_image {
         width: 200px;
         height: 200px;
+        border-radius: 100px;
         object-fit: cover;
+        float: right;
+      }
+      .p_index {
+        text-align: center;
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    
-    <nav>
-      <a href="index.html">Homepage</a>
-      <a href="projects.html">Projects</a>
-
-      <a href="interests.html">My Interests</a>
-      <a href="contacts.html">Contact Me</a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html" class="active">Homepage</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
+      </ul>
     </nav>
-    <img src="images/WT (2).png" alt="My logo" class="logo" />
+    <a href="images/WT (2).png"><img src="images/WT (2).png" alt="My logo" class="logo" /></a>
 
     <h1>Wazih Taosif</h1>
-    <p>
+
+    <p class="p_index">
       Hi! I am a beginner but a passionate Frontend Developer from New York.
     </p>
-    <p>
-      My love for technologies got me into programming, and made me dive into
-      the fun stuffs about programming. I worked on few projects that I would
-      wanna share, so feel free to chech them out.
-    </p>
 
-    <img src="images/my_pic.jpg" alt="My Picture" class="my_image" />
+    <p class="p_index">
+      My love for technologies got me into programming, and made me dive into
+      the fun stuffs about programming. <br />
+      I worked on few projects that I would wanna share, so feel free to check
+      them out.
+    </p>
+    <a href="images/My picture.jpg"><img src="images/My picture.jpg" alt="My Picture" class="my_image" /></a>
   </body>
 </html>
