@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 body {
-  background-color: aliceblue;
+  background-color: white;
   color: black;
   font-family: "Tinos", serif;
 }
@@ -40,4 +40,3 @@ h1 {
 .contact_ul li a img {
   width: 4%;
 }
-
