@@ -6,23 +6,27 @@
     <title>Wazih Taosif</title>
     <style>
       #logo {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
         object-fit: cover;
-        margin-top: 10px;
-        margin-left: 10px;
         cursor: zoom-in;
       }
-      .my_image {
-        width: 200px;
-        height: 200px;
-        border-radius: 100px;
+      .my-image {
+        width: 400px;
+        height: 400px;
+        border-radius: 200px;
         object-fit: cover;
-        float: right;
         cursor: zoom-in;
       }
-      .homepage_p {
+      .child-div-paragraphs {
         text-align: center;
+
+      }
+      .parent-div-homepage {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        margin-top: 30px;
       }
     </style>
     <link rel="stylesheet" href="styles.css" />
@@ -36,27 +40,31 @@
         <li><a href="contacts.html">Contacts</a></li>
       </ul>
     </nav>
-    <a href="images/wt logo3.png"
-      ><img src="images/wt logo3.png" alt="My logo" id="logo"
-    /></a>
-    <div class="text-div-homepage">
-      <h1>Wazih Taosif</h1>
+    <div class="parent-div-homepage">
+      <a href="images/wt logo3.png"
+        ><img src="images/wt logo3.png" alt="My logo" id="logo"
+      /></a>
+      <div class="child-div-text-homepage">
+        <h1>Wazih Taosif</h1>
 
-      <div class="homepage_p">
-        <p>
-          Hi! I am a beginner but a passionate Frontend Developer from New York.
-        </p>
+        <div class="child-div-paragraphs">
+          <p>
+            Hi! I am a beginner but a passionate Frontend Developer from New
+            York.
+          </p>
 
-        <p>
-          My love for technologies and games got me into programming, and made
-          me dive into the fun stuffs about programming. <br />
-          I worked on few projects that I would wanna share, as well as some of
-          my interests and skills so feel free to check them out.
-        </p>
+          <p>
+            My love for technologies and games got me into programming, and made
+            me dive into the fun stuffs about programming. <br />
+            I worked on few projects that I would wanna share, as well as some
+            of my interests and skills so feel free to check them out.
+          </p>
+        </div>
       </div>
+
+      <a href="images/My picture.jpg"
+        ><img src="images/My picture.jpg" alt="My Picture" class="my-image"
+      /></a>
     </div>
-    <a href="images/My picture.jpg"
-      ><img src="images/My picture.jpg" alt="My Picture" class="my_image"
-    /></a> 
   </body>
 </html>
