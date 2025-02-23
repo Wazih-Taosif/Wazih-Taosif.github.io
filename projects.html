@@ -4,27 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wazih Taosif</title>
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      .a_project {
-        background-color: rgb(190, 190, 190);
-        text-decoration: none;
-        padding: 12px;
-        border-radius: 34px;
-        color: black;
-        font-weight: bold;
-        text-align: center;
-      }
-      .a_project:hover {
-        opacity: 0.5;
-      }
-      .project-div {
-        text-align: center;
-      }
-      p {
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="css-files/styles.css" />
+    <link rel="stylesheet" href="css-files/navigation.css" />
+    <link rel="stylesheet" href="css-files/general.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -32,6 +14,7 @@
         <li><a href="index.html">Homepage</a></li>
         <li><a href="about_me.html">About Me</a></li>
         <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
         <li><a href="interests.html">Interests</a></li>
         <li><a href="contacts.html">Contacts</a></li>
       </ul>
@@ -42,46 +25,79 @@
       of these are:
     </p>
     <hr />
-    <div class="project-div">
-      <h2>Text-Based Adventure Game</h2>
-      <p>
-        This was a python project that I worked on, and it was about making a
-        text based game.
-      </p>
-      <a
-        href="https://pyrepl.justinforlenza.dev/?code=eNrtWW1vGzcS%2Fq5fwTgfZAO2jORjcW2Q3AVJ0V4bJL47HGBAoXa5WlarpbDkWhXgH99nZsh9lY0W%2FVZUcVZckZzlzDzzuofG1uHy4uJisVD3%2BKfUrbpdq7VS6zW%2B8PeoHteX6yu%2Bx%2B90XShei5Vq%2FVU94rqWEQZYjrG6f1RLXGkprv%2FFykua4quMHuP9FY3pHy1V96B0v15frx9xXXcjLKb7W960flwscOKrBX06Bmi3fHjpanVzc3FLNGX89Wuaph9pxfBzSxNEjum%2BbNrK%2BG8S7XemcI1RoTRqq%2FdG%2BaCb4K9VZYJXW6dcrY42lEorv9dVpfTetXVQrlBMZwWKkdJn3KtXN9%2BpQ2W0B8nTQei6Q7Cu9upY2gyE8LRjY0MwtbK1t7ksylzQtEztdbPzK2VXRi0Pja53y9VqpSaPed0%2FJnf9k46uyT2oxrNmmL8eUlK1C2r56fPbn34gqj3RSvtQnYgWWA5l49ptyRSD%2BTWs1Ns6V%2B%2FrX9ypk9MLkiTdsLxIHCy9ocoAOsIVA2v4obsFoQuaJ4UzEBl8fAeo0iZgrAPekqbwXwgypjqgARGy61FUjc0CLEwzFAR65z8JE0Ow%2Fd%2B1rCNIUavQ2ANBQKusaS2k7Ut7GMgNixu1AYDya%2BWdOmHvUQMewZEsvdubUNp6q4q2Hu9SpX6AdI8AmKBjpf7l1IhAVppsp1yLGwJRZnStaqMbvjX51rxRPzeKFSsI0oegcWrgGefdWNYKHvyGGXxJw0yA6PduZ64bl%2B0AdB8svpnlIViJykED%2BK8gCQISUdvrHXHz5ecvau%2B3q0VuCiF2efUNxDxgr2k3G5Mzg%2FwcpQGhTLceP2pVWDICNgc8Z4%2FfmAqJqKPy4fP7t3eAHotceX3k4%2FE6JmY9bGZPx4GsSlMdSHgjCu%2Bi6JgAlj%2BY5qRchQNge26bcBot%2F1K6FpOkgtC0frCX1m8N5FmzyHNHCuIlNpB0Vbz7FqI6tCB1Rwa5MeFoYORLnlwylWW%2Fd6luYMS82xaJwLfqgkcXJM6RQLewXAAxnWmlfmyznYXNdqc8as%2F2XdiqgkTZax1so4N4qQk93zYP9sHkkynECjYMdq1ku5MPWVq0XQka3ZWdPBvkmhZwCIlX2DBPDYJCukpoYI8tQYDHKUw8Z7rdhS34LAvs%2FUeHHzNEh%2BInS%2BRjJnCw7o65JYbo3BzxokMa3QlrLAD%2BlxzT4C56J3ZKEu3YQfV3MUA%2B9aHdt1OWp8DpoTVGz7vvP6h%2Ff%2F%2Fl7u0P71%2BcAUJuARbYdtnWW9OcQ4rYBTusrHQU2SgwIFSwSfSQfBJJ56HUaeXM3BBkMTiM4MbQSveyRHSV4CdhQ30dAFH00eU2%2BKa4MgTmUG9ECDKPk5LlxF8kR0qQlVDT65LijmA45TsxFj2r4d8Jc4wW7HXZqY68Lstb%2FqYm29MaC5K4FPmRFCCNzmIl0%2BOBSLW3WOblHyT8%2BwWH3Y7fyOo9BeA1Z2fPsYW%2FjqUR3o6NC3DxytstgUsHOP%2BTV8uP73%2F8tORMaOThLfI0cnsP1tsNUiMA82AckiNVNG5PwQYhM7fIU%2BpsHGHuyhbJUkDWBMNJEUR2ef1AkQX3jTdVMd6GKKLxxNI0MVrKtIwvwRGHRQ6rUw0979DiLGvnjO4kQYrp%2BlB3orCUno90x3rqAD7THfTUJ%2BB%2FSHcDDf61tCesxa%2BXnyQFSkkaqzYtJdXKuI%2F8%2Fywdecgu9gsMltdqyRZLA05hlpxgxXyKPCjnVMZ7vTUoaL5LeUGiD%2F8upKJvT%2FBK%2FmG8lJ8VV0ZPMSdHx0jUJIdLxOQ78o46YaVYVbUPRnOswGGv1QeHVAM5TeFcvlKN9Tv1oBurSY3Itn6huMT5HtUjpua4ATgcS%2BTEED4xfaj0CcOU8VJAkVooczWeuDkxWRJRCYqVLZCFNoSXlWJN0KNnqWeBAo2SzEQlNAaALAI%2FqGJqJHtvkA%2FqSiGFbLsUaZjW66LRVkKjsduSjkZl0VM5IwuAICfnnLMjmSIv6%2BCCeDqCS1bZ%2FUbiK069JG6XqMg2OkPxNoCFUIEWxxvmaSOXZ9ABr0tYo6UrxWm60SgzkKfjV06Pg5vG8ZR8gqEBMwkU%2BKkWrkvktygtKnMIVBxOKBQG9WjujrUUk5R0nM0X%2Fs4U%2FnymMM6KJ4CJaJoj5WhghDQFNHKhRshnzRYoOjtlwSe87j0FLmSH8AeTSNdpUhoAfE1Fv8g0jvtyn2XO4xjtuNBnafF4WOJTs6jPic%2BIYhyYPsBPUO5qM3JCtmYn0NezeuR9GdelO3JJTJa9dbHKxHK4tvBmFMVIduIZuOBG8wTuJrdFYRqS6JGiX9o7dfRDOuo%2FnmtrKcdh%2BFI3UyMAVsoxtTshilBRUSyl%2B0VSR8sBFy%2B5gH%2Fd1fSpxt%2B4EBAm5ahdW0CCW%2B3WFExnXjWHK6RAnVFjifwnrRoxQHYdKCh3FWnWaE%2FeZQyoM54WuMsR9xvv6uFkLCGmPkHsF79dxSKtrz4HFeewOOtqzVE5NmhGPlVrnstyKI3rzvXXKi8TrwSEGQpSgXEmPU01AvObenrya9czTlxFNQ3dZjTu3i9iuDpj3eIdn049yd5iS1XaTdwIeQKsSnvPeWVAl6RiZKOBSV0%2FwrFz0lRrjD%2FANuzGVnbSL7pDxNsVbYUeDKUSJ%2Bn0Uag8ItjNc1Ve5GrYxqj1MpFuH6ekWkuCZP3G2MTi7KGTnGfqwIgO0O6P4h%2FC4x7XZx3nsDIjGCDah8ZVM3%2FAEoqT4vdSY%2BqjOxKr7DprHuFSq7wBz9xJRUa%2Fka77zfpmKIOPBkk%2B7zN1Ds210YWwj4ZW0O8ihbIgNy4fq2PmSSQLGYn372bEn00xpvDg9vMMHGxK0B73IAkZMEk00yn9H3a4PaAQ337E3jUy%2FiOyDQnKNH1C4PS7qaJHpi77kdzy46hfHsN67dCxn22ldhZlxGT6OS3LKu5poYls90BvfKVhCGnc%2BIVBI0S6OrOuHZcJPyFJoFqG652a3hVJKI5WkUzihfofcY4XAsR87qQQkKD8%2BunSMVDGcMbCqIYcRWH6gZt%2F419nVSSeRf3lJ8jGjLCz9%2FnOEfm4XKLEfO38PHFDl18giBKA6EXGDD%2BsXq5HOuWklx4jXzPVrc4yIKKmV1lccLiiWKm7WKII1V6VrN0jvU4AUvkdT2684WrJ%2BgqT14pf%2BFVQ66yFQOilhujZHsP59zuyIubPYjxyw8zT8Jk2gvNSDFLFO9Rs3Ef1vEsVP2fjPBo0NUZriUpcLCW0pPKpcwX496d6NTuVlhdD3eFQUozeS8lJ5Y3j8B1HpCZFyGhHPItgYbqYCXX1Crub2J7p%2BzTxzL8B%2BrrSdQ%3D%3D
+    <div class="project-flexbox">
+      <div class="project-container">
+        <div class="project-title">Text-Based Adventure Game</div>
+        <div class="project-description">
+          It was a python project where I built a text-based game. In the game
+          the player faces certain problems and has to figure out a solution to
+          his problem and progress in the game. Depending on his choices the
+          game progresses differently.
+        </div>
+        <div class="project-link">
+          <a
+            href="https://pyrepl.justinforlenza.dev/?code=eNrtWW1vGzcS%2Fq5fwTgfZAO2jORjcW2Q3AVJ0V4bJL47HGBAoXa5WlarpbDkWhXgH99nZsh9lY0W%2FVZUcVZckZzlzDzzuofG1uHy4uJisVD3%2BKfUrbpdq7VS6zW%2B8PeoHteX6yu%2Bx%2B90XShei5Vq%2FVU94rqWEQZYjrG6f1RLXGkprv%2FFykua4quMHuP9FY3pHy1V96B0v15frx9xXXcjLKb7W960flwscOKrBX06Bmi3fHjpanVzc3FLNGX89Wuaph9pxfBzSxNEjum%2BbNrK%2BG8S7XemcI1RoTRqq%2FdG%2BaCb4K9VZYJXW6dcrY42lEorv9dVpfTetXVQrlBMZwWKkdJn3KtXN9%2BpQ2W0B8nTQei6Q7Cu9upY2gyE8LRjY0MwtbK1t7ksylzQtEztdbPzK2VXRi0Pja53y9VqpSaPed0%2FJnf9k46uyT2oxrNmmL8eUlK1C2r56fPbn34gqj3RSvtQnYgWWA5l49ptyRSD%2BTWs1Ns6V%2B%2FrX9ypk9MLkiTdsLxIHCy9ocoAOsIVA2v4obsFoQuaJ4UzEBl8fAeo0iZgrAPekqbwXwgypjqgARGy61FUjc0CLEwzFAR65z8JE0Ow%2Fd%2B1rCNIUavQ2ANBQKusaS2k7Ut7GMgNixu1AYDya%2BWdOmHvUQMewZEsvdubUNp6q4q2Hu9SpX6AdI8AmKBjpf7l1IhAVppsp1yLGwJRZnStaqMbvjX51rxRPzeKFSsI0oegcWrgGefdWNYKHvyGGXxJw0yA6PduZ64bl%2B0AdB8svpnlIViJykED%2BK8gCQISUdvrHXHz5ecvau%2B3q0VuCiF2efUNxDxgr2k3G5Mzg%2FwcpQGhTLceP2pVWDICNgc8Z4%2FfmAqJqKPy4fP7t3eAHotceX3k4%2FE6JmY9bGZPx4GsSlMdSHgjCu%2Bi6JgAlj%2BY5qRchQNge26bcBot%2F1K6FpOkgtC0frCX1m8N5FmzyHNHCuIlNpB0Vbz7FqI6tCB1Rwa5MeFoYORLnlwylWW%2Fd6luYMS82xaJwLfqgkcXJM6RQLewXAAxnWmlfmyznYXNdqc8as%2F2XdiqgkTZax1so4N4qQk93zYP9sHkkynECjYMdq1ku5MPWVq0XQka3ZWdPBvkmhZwCIlX2DBPDYJCukpoYI8tQYDHKUw8Z7rdhS34LAvs%2FUeHHzNEh%2BInS%2BRjJnCw7o65JYbo3BzxokMa3QlrLAD%2BlxzT4C56J3ZKEu3YQfV3MUA%2B9aHdt1OWp8DpoTVGz7vvP6h%2Ff%2F%2Fl7u0P71%2BcAUJuARbYdtnWW9OcQ4rYBTusrHQU2SgwIFSwSfSQfBJJ56HUaeXM3BBkMTiM4MbQSveyRHSV4CdhQ30dAFH00eU2%2BKa4MgTmUG9ECDKPk5LlxF8kR0qQlVDT65LijmA45TsxFj2r4d8Jc4wW7HXZqY68Lstb%2FqYm29MaC5K4FPmRFCCNzmIl0%2BOBSLW3WOblHyT8%2BwWH3Y7fyOo9BeA1Z2fPsYW%2FjqUR3o6NC3DxytstgUsHOP%2BTV8uP73%2F8tORMaOThLfI0cnsP1tsNUiMA82AckiNVNG5PwQYhM7fIU%2BpsHGHuyhbJUkDWBMNJEUR2ef1AkQX3jTdVMd6GKKLxxNI0MVrKtIwvwRGHRQ6rUw0979DiLGvnjO4kQYrp%2BlB3orCUno90x3rqAD7THfTUJ%2BB%2FSHcDDf61tCesxa%2BXnyQFSkkaqzYtJdXKuI%2F8%2Fywdecgu9gsMltdqyRZLA05hlpxgxXyKPCjnVMZ7vTUoaL5LeUGiD%2F8upKJvT%2FBK%2FmG8lJ8VV0ZPMSdHx0jUJIdLxOQ78o46YaVYVbUPRnOswGGv1QeHVAM5TeFcvlKN9Tv1oBurSY3Itn6huMT5HtUjpua4ATgcS%2BTEED4xfaj0CcOU8VJAkVooczWeuDkxWRJRCYqVLZCFNoSXlWJN0KNnqWeBAo2SzEQlNAaALAI%2FqGJqJHtvkA%2FqSiGFbLsUaZjW66LRVkKjsduSjkZl0VM5IwuAICfnnLMjmSIv6%2BCCeDqCS1bZ%2FUbiK069JG6XqMg2OkPxNoCFUIEWxxvmaSOXZ9ABr0tYo6UrxWm60SgzkKfjV06Pg5vG8ZR8gqEBMwkU%2BKkWrkvktygtKnMIVBxOKBQG9WjujrUUk5R0nM0X%2Fs4U%2FnymMM6KJ4CJaJoj5WhghDQFNHKhRshnzRYoOjtlwSe87j0FLmSH8AeTSNdpUhoAfE1Fv8g0jvtyn2XO4xjtuNBnafF4WOJTs6jPic%2BIYhyYPsBPUO5qM3JCtmYn0NezeuR9GdelO3JJTJa9dbHKxHK4tvBmFMVIduIZuOBG8wTuJrdFYRqS6JGiX9o7dfRDOuo%2FnmtrKcdh%2BFI3UyMAVsoxtTshilBRUSyl%2B0VSR8sBFy%2B5gH%2Fd1fSpxt%2B4EBAm5ahdW0CCW%2B3WFExnXjWHK6RAnVFjifwnrRoxQHYdKCh3FWnWaE%2FeZQyoM54WuMsR9xvv6uFkLCGmPkHsF79dxSKtrz4HFeewOOtqzVE5NmhGPlVrnstyKI3rzvXXKi8TrwSEGQpSgXEmPU01AvObenrya9czTlxFNQ3dZjTu3i9iuDpj3eIdn049yd5iS1XaTdwIeQKsSnvPeWVAl6RiZKOBSV0%2FwrFz0lRrjD%2FANuzGVnbSL7pDxNsVbYUeDKUSJ%2Bn0Uag8ItjNc1Ve5GrYxqj1MpFuH6ekWkuCZP3G2MTi7KGTnGfqwIgO0O6P4h%2FC4x7XZx3nsDIjGCDah8ZVM3%2FAEoqT4vdSY%2BqjOxKr7DprHuFSq7wBz9xJRUa%2Fka77zfpmKIOPBkk%2B7zN1Ds210YWwj4ZW0O8ihbIgNy4fq2PmSSQLGYn372bEn00xpvDg9vMMHGxK0B73IAkZMEk00yn9H3a4PaAQ337E3jUy%2FiOyDQnKNH1C4PS7qaJHpi77kdzy46hfHsN67dCxn22ldhZlxGT6OS3LKu5poYls90BvfKVhCGnc%2BIVBI0S6OrOuHZcJPyFJoFqG652a3hVJKI5WkUzihfofcY4XAsR87qQQkKD8%2BunSMVDGcMbCqIYcRWH6gZt%2F419nVSSeRf3lJ8jGjLCz9%2FnOEfm4XKLEfO38PHFDl18giBKA6EXGDD%2BsXq5HOuWklx4jXzPVrc4yIKKmV1lccLiiWKm7WKII1V6VrN0jvU4AUvkdT2684WrJ%2BgqT14pf%2BFVQ66yFQOilhujZHsP59zuyIubPYjxyw8zT8Jk2gvNSDFLFO9Rs3Ef1vEsVP2fjPBo0NUZriUpcLCW0pPKpcwX496d6NTuVlhdD3eFQUozeS8lJ5Y3j8B1HpCZFyGhHPItgYbqYCXX1Crub2J7p%2BzTxzL8B%2BrrSdQ%3D%3D
       "
-        target="_blank"
-        class="a_project"
-        >Link to the Game</a
-      >
+            target="_blank"
+            class="project-a"
+            >Project Link</a
+          >
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-title">A Tip Calculator</div>
+        <div class="project-description">
+          It was a python project where I built a tip calculator. It's a
+          calculator which calculates the amount of tip a person wants to pay.
+          You just have to tell the calculator your total bill, how much in
+          percentage you want to tip, and the calculator will do the
+          calculations for you.
+        </div>
+        <div class="project-link">
+          <a
+            href="https://pyrepl.justinforlenza.dev/?code=eNptUstOwzAQvPcrVjk1gGi5IiHEjSMSJ06R22xaC3fXsh1F%2BXu8dh4m4JvtmfHMrE%2FaGHgBTbYP%2B%2BrDoPIISAEdjNw7kPtnqOrdLmi7At95gFt%2FvoJFd45wdUHgDsIVEwMG7k0rCmD0N0JgiPTXWacRVhTrDKuwjwc1HODpeMyX6sY9heVa9Gq4W8GJLUIclHgvYfcFLOtEoHWaouevOQ9oHyNFrA9u4VXQsjHKPUaPEyEVILGLkCVVjC%2FgpC7gDWK28f8Tb9Q%2B5KJzmj%2F20nFJlgq9NVoKKoehaBSfnqkof1BECjJ8mU18mNMoknbTsWuYsJHpTuXlNw%2FTNtEXx5%2By03RZ9U4YBkRaPWdC8pwd%2FcoLqPK%2FEauE2Hr5HlaNm9CrsW13cf0AoKvjpw%3D%3D"
+            target="_blank"
+            class="project-a"
+            >Project Link</a
+          >
+        </div>
+      </div>
     </div>
-    <div class="project-div">
-      <h2>A Tip Calculator</h2>
-      <p>
-        Its a Calculator that calculates the amount a person would want to tip
-        in a restaurant.
-      </p>
-
-      <a
-        href="https://pyrepl.justinforlenza.dev/?code=eNptUstOwzAQvPcrVjk1gGi5IiHEjSMSJ06R22xaC3fXsh1F%2BXu8dh4m4JvtmfHMrE%2FaGHgBTbYP%2B%2BrDoPIISAEdjNw7kPtnqOrdLmi7At95gFt%2FvoJFd45wdUHgDsIVEwMG7k0rCmD0N0JgiPTXWacRVhTrDKuwjwc1HODpeMyX6sY9heVa9Gq4W8GJLUIclHgvYfcFLOtEoHWaouevOQ9oHyNFrA9u4VXQsjHKPUaPEyEVILGLkCVVjC%2FgpC7gDWK28f8Tb9Q%2B5KJzmj%2F20nFJlgq9NVoKKoehaBSfnqkof1BECjJ8mU18mNMoknbTsWuYsJHpTuXlNw%2FTNtEXx5%2By03RZ9U4YBkRaPWdC8pwd%2FcoLqPK%2FEauE2Hr5HlaNm9CrsW13cf0AoKvjpw%3D%3D"
-        target="_blank"
-        class="a_project"
-        >Link to the Tip Calculator</a
-      >
-    </div>
-    <div class="project-div">
-      <h2>Security</h2>
-      <p>
-        Its a project where I had to secure a urgent care center with physical
-        and digital security measures.
-      </p>
-      <a
-        href="https://docs.google.com/drawings/d/1PypBQ6gX9H54iuJhFnuqzc180GNDpUav5qMR99dLXyw/edit?pli=1"
-        class="a_project"
-        target="_blank"
-        >Link to the Project</a
-      >
+    <div class="project-flexbox">
+      <div class="project-container">
+        <div class="project-title">Security Project</div>
+        <div class="project-description">
+          It was a cybersecurity project in which I learned how to secure an
+          infrastructure by utilizing both physical and digital hardening
+          methods. In the project, I used several security measures such as:
+          CCTVs, cable-locks, anti-malware systems, biometric scans etc to
+          secure the urgent care.
+        </div>
+        <div class="project-link">
+          <a
+            href="https://docs.google.com/drawings/d/1PypBQ6gX9H54iuJhFnuqzc180GNDpUav5qMR99dLXyw/edit?pli=1"
+            class="project-a"
+            target="_blank"
+            >Project Link</a
+          >
+        </div>
+      </div>
+      <div class="project-container">
+        <div class="project-title">Networking Project</div>
+        <div class="project-description">
+          In this project, I learned how we get wifi in our houses. The project
+          illustrates how wifi from internet flows through wires into our houses
+          via the internet service provider.
+        </div>
+        <div class="project-link">
+          <a
+            href="https://drive.google.com/file/d/1jt5p0G1SmDjK2uOTxgG_6Ke_1eXl_FBu/view?usp=sharing"
+            target="_blank"
+            class="project-a"
+            >Project Link</a
+          >
+        </div>
+      </div>
     </div>
   </body>
 </html>
