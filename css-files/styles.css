@@ -17,7 +17,7 @@
 .homepage-flexbox {
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 .homepage-text {
@@ -58,13 +58,13 @@
 .project-container {
   border-style: solid;
   border-width: 1px;
-  border-color: black;
+  border-color: rgb(64, 9, 75);
   margin-top: 40px;
   width: 500px;
   height: 300px;
   text-align: center;
   margin-right: 30px;
-  box-shadow: 0 0 10px 1px grey;
+  box-shadow: 0 0 10px 1px rgb(188, 153, 205);
   border-radius: 14px;
   display: grid;
   grid-template-rows: 150px 100px 50px;
@@ -93,23 +93,22 @@
 
 /* interests page codes*/
 .image {
-  width: 246px;
+  width: 250px;
   height: 170px;
   object-fit: cover;
 }
 .image-maths {
-  width: 246px;
+  width: 250px;
   height: 170px;
 }
 .interests-flexbox {
   display: flex;
+  justify-content: space-evenly;
 }
 .img-box,
 .img-box-2 {
   border-width: 1px;
   border-style: solid;
-  margin-right: 20px;
-  margin-left: 2px;
   height: 170px;
 }
 .img-box {
@@ -122,9 +121,37 @@
 }
 
 /*contacts page codes*/
-.box {
-  width: auto;
-  margin: 0px;
-  padding: 50px;
-  background-color: rgb(145, 137, 137);
+.heading-box {
+  background-color: rgb(200, 200, 200);
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  padding: 100px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.contacts-flexbox {
+  display: flex;
+  justify-content: space-evenly;
+}
+.contacts-container {
+  border: 0px black solid;
+  box-shadow: 0 0 10px 1px grey;
+  width: 500px;
+  height: 250px;
+  margin-right: -60px;
+  margin-left: -60px;
+}
+.insta,
+.facebook,
+.discord,
+.github {
+  width: 55px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+.social-media-flexbox {
+  display: flex;
+  margin-top: 30px;
 }
