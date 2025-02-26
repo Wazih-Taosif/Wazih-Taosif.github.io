@@ -36,6 +36,9 @@
   margin-left: 10px;
   margin-right: 10px;
 }
+.aboutme-flexbox:nth-child(even) {
+  flex-direction: row-reverse;
+}
 
 /*Skills page codes */
 .skills-flexbox {
@@ -43,6 +46,9 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+}
+.skills-flexbox:nth-child(even) {
+  flex-direction: row-reverse;
 }
 .skills-paragraph {
   width: 800px;
@@ -126,7 +132,8 @@
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  padding: 100px;
+  padding: 80px;
+  padding-bottom: 130px;
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -136,12 +143,19 @@
 }
 .contacts-container {
   border: 0px black solid;
-  box-shadow: 0 0 10px 1px grey;
-  width: 500px;
-  height: 250px;
+  box-shadow: 0 0 10px 3px rgb(108, 107, 107);
+  width: 420px;
+  height: 174px;
   margin-right: -60px;
   margin-left: -60px;
+  background-color: rgb(224, 224, 224);
 }
+.contacts-container {
+  position: fixed;
+  top: 250px;
+  left: 614px;
+}
+
 .insta,
 .facebook,
 .discord,
@@ -151,7 +165,21 @@
   object-fit: cover;
   margin-right: 20px;
 }
+.contacts-container {
+  justify-self: center;
+}
 .social-media-flexbox {
   display: flex;
   margin-top: 30px;
+}
+.contacts-container > div {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+.contacts-container > div > h3 {
+  margin-right: 10px;
+}
+.contacts-container a {
+  color: blue;
 }
