@@ -128,32 +128,12 @@
 
 /*contacts page codes*/
 .heading-box {
-  background-color: rgb(200, 200, 200);
   text-align: center;
   font-size: 38px;
   font-weight: 700;
   padding: 80px;
-  padding-bottom: 130px;
   margin-left: -10px;
   margin-right: -10px;
-}
-.contacts-flexbox {
-  display: flex;
-  justify-content: space-evenly;
-}
-.contacts-container {
-  border: 0px black solid;
-  box-shadow: 0 0 10px 3px rgb(108, 107, 107);
-  width: 420px;
-  height: 174px;
-  margin-right: -60px;
-  margin-left: -60px;
-  background-color: rgb(224, 224, 224);
-}
-.contacts-container {
-  position: fixed;
-  top: 250px;
-  left: 614px;
 }
 
 .insta,
@@ -165,21 +145,56 @@
   object-fit: cover;
   margin-right: 20px;
 }
-.contacts-container {
-  justify-self: center;
-}
 .social-media-flexbox {
   display: flex;
   margin-top: 30px;
 }
+.contacts-flexbox {
+  display: flex;
+  justify-content: center;
+}
+.contacts-container {
+  border: 0px black solid;
+  box-shadow: 0 0 10px 3px rgb(17, 61, 112);
+  width: 420px;
+  height: 300px;
+  margin-right: 20px;
+  background-color: rgb(255, 255, 255);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.contacts-container {
+  justify-self: center;
+}
 .contacts-container > div {
   display: flex;
   align-items: center;
-  margin-left: 10px;
 }
 .contacts-container > div > h3 {
   margin-right: 10px;
 }
 .contacts-container a {
   color: blue;
+}
+.contacts-container input[type="text"],
+[type="tel"],
+[type="email"],
+[type="number"],
+[type="radio"] {
+  margin-bottom: 6px;
+  padding: 2px;
+}
+.submit-button {
+  background-color: lightgreen;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 20px;
+}
+.reset-button {
+  background-color: tomato;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 20px;
 }
