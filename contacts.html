@@ -7,20 +7,6 @@
     <link rel="stylesheet" href="css-files/styles.css" />
     <link rel="stylesheet" href="css-files/navigation.css" />
     <link rel="stylesheet" href="css-files/general.css" />
-    <style>
-      .github-img {
-        width: 70px;
-      }
-      .contact-img {
-        width: 50px;
-      }
-      .contact_ul {
-        list-style-type: none;
-        padding: 0px;
-        margin: 0px;
-        overflow: hidden;
-      }
-    </style>
   </head>
   <body>
     <nav class="navbar">
@@ -36,6 +22,7 @@
     <div class="heading-box">Contact Me!</div>
     <div class="contacts-flexbox">
       <div class="contacts-container">
+        <p>I am available in social media and email.</p>
         <div>
           <h3>Personal email:</h3>
           <a href="mailto:haq.wazih@gmail.com" target="_blank"
@@ -52,20 +39,59 @@
           <h3>Phone number:</h3>
           <a href="">1234567890</a>
         </div>
+        <div class="social-media-flexbox">
+          <div>
+            <a
+              href="https://www.instagram.com/itz_wazih?igsh=MW81N2E0NWR1cm1iYg=="
+              target="_blank"
+              ><img
+                src="images/insta logo html.png"
+                alt="instagram logo"
+                class="insta"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/share/15zEMzD3vZ/" target="_blank"
+              ><img
+                src="images/facebook logo html.svg"
+                alt="facebook logo"
+                class="facebook"
+            /></a>
+          </div>
+          <div>
+            <a href="images/213px-Discord_logo.webp.png" target="_blank"
+              ><img
+                src="images/discord-logo .png"
+                alt="discord logo"
+                class="discord"
+            /></a>
+          </div>
+          <div>
+            <a href="https://github.com/Wazih-Taosif" target="_blank"
+              ><img
+                src="images/GitHub-Logo.png"
+                alt="github logo"
+                class="github"
+            /></a>
+          </div>
+        </div>
       </div>
       <div class="contacts-container">
+        <p>
+          If you want to contact me directly, you can fill the form and submit.
+        </p>
         <form
           action="https://form-to-email.steam-center.workers.dev/"
           method="post"
         >
-          <input hidden name="send-to" value="haq.wazih@gmail.com">
-          <label>Your Name</label>
+          <input hidden name="send-to" value="haq.wazih@gmail.com" />
+          <label class="label-space">Name:</label>
           <input type="text" required name="name" />
           <br />
-          <label>Email</label>
+          <label class="label-space">Email:</label>
           <input type="email" required name="email" />
           <br />
-          <label>Phone</label>
+          <label class="label-space">Phone:</label>
           <input type="tel" name="phone" />
           <br />
           <label>Preferred contact method:</label>
@@ -79,42 +105,9 @@
           <br />
           <textarea name="comments"></textarea>
           <br />
-          <input type="reset" class="reset-button"/>
-          <input type="submit" class="submit-button"/>
+          <input type="reset" class="reset-button" />
+          <input type="submit" class="submit-button" />
         </form>
-      </div>
-    </div>
-    <div class="social-media-flexbox">
-      <div>
-        <a
-          href="https://www.instagram.com/itz_wazih?igsh=MW81N2E0NWR1cm1iYg=="
-          target="_blank"
-          ><img
-            src="images/insta logo html.png"
-            alt="instagram logo"
-            class="insta"
-        /></a>
-      </div>
-      <div>
-        <a href="https://www.facebook.com/share/15zEMzD3vZ/" target="_blank"
-          ><img
-            src="images/facebook logo html.svg"
-            alt="facebook logo"
-            class="facebook"
-        /></a>
-      </div>
-      <div>
-        <a href="images/213px-Discord_logo.webp.png" target="_blank"
-          ><img
-            src="images/discord-logo .png"
-            alt="discord logo"
-            class="discord"
-        /></a>
-      </div>
-      <div>
-        <a href="https://github.com/Wazih-Taosif" target="_blank"
-          ><img src="images/GitHub-Logo.png" alt="github logo" class="github"
-        /></a>
       </div>
     </div>
   </body>

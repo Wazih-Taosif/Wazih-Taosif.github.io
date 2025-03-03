@@ -140,8 +140,8 @@
 .facebook,
 .discord,
 .github {
-  width: 55px;
-  height: 50px;
+  width: 40px;
+  height: 35px;
   object-fit: cover;
   margin-right: 20px;
 }
@@ -157,7 +157,7 @@
   border: 0px black solid;
   box-shadow: 0 0 10px 3px rgb(17, 61, 112);
   width: 420px;
-  height: 300px;
+  height: 400px;
   margin-right: 20px;
   background-color: rgb(255, 255, 255);
   padding-left: 10px;
@@ -176,20 +176,37 @@
 .contacts-container a {
   color: blue;
 }
+.contacts-container label {
+  font-weight: 700;
+}
+.contacts-container .label-space {
+  display: inline-block;
+  width: 55px;
+}
 .contacts-container input[type="text"],
 [type="tel"],
 [type="email"],
 [type="number"],
 [type="radio"] {
-  margin-bottom: 6px;
+  margin-bottom: 12px;
   padding: 2px;
+}
+.contacts-container {
+  position: relative;
 }
 .submit-button {
   background-color: lightgreen;
   border: none;
   border-radius: 3px;
   padding: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
+  position: absolute;
+  right: 20px;
+  bottom: 30px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  opacity: 0.7;
 }
 .reset-button {
   background-color: tomato;
@@ -197,4 +214,16 @@
   border-radius: 3px;
   padding: 10px;
   margin-top: 20px;
+  position: absolute;
+  bottom: 30px;
+  right: 90px;
+  cursor: pointer;
 }
+.reset-button:hover {
+  opacity: 0.7;
+}
+textarea {
+  width: 200px;
+  height: 110px;
+}
+
