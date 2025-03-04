@@ -152,6 +152,7 @@
 .contacts-flexbox {
   display: flex;
   justify-content: center;
+  margin-top: -8px;
 }
 .contacts-container {
   border: 0px black solid;
@@ -189,7 +190,17 @@
 [type="number"],
 [type="radio"] {
   margin-bottom: 12px;
-  padding: 2px;
+  padding: 3px;
+  border-radius: 5px;
+  border: 1px black solid;
+}
+.contacts-container input[type="email"],
+[type="tel"],
+[type="text"] {
+  width: 200px;
+}
+.contacts-container input[type="radio"] {
+  cursor: pointer;
 }
 .contacts-container {
   position: relative;
@@ -226,4 +237,6 @@ textarea {
   width: 200px;
   height: 110px;
 }
-
+.mail-phone:hover {
+  background-color: rgb(221, 237, 255);
+}
