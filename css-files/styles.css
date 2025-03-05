@@ -16,9 +16,7 @@
 }
 .homepage-flexbox {
   display: flex;
-  align-items: center;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 170px;
 }
 .homepage-text {
   text-align: center;
@@ -107,12 +105,21 @@
   width: 250px;
   height: 170px;
 }
+.image-hxh {
+  width: 250px;
+  height: 170px;
+}
+.image-DN {
+  width: 250px;
+  height: 170px;
+}
 .interests-flexbox {
   display: flex;
   justify-content: space-evenly;
 }
 .img-box,
-.img-box-2 {
+.img-box-2,
+.img-box-3 {
   border-width: 1px;
   border-style: solid;
   height: 170px;
@@ -122,6 +129,10 @@
   box-shadow: 0 0 10px 4px rgb(16 12 88);
 }
 .img-box-2 {
+  border-color: rgb(62, 93, 198);
+  box-shadow: 0 0 10px 4px rgb(62, 93, 198);
+}
+.img-box-3 {
   border-color: rgb(19, 81, 117);
   box-shadow: 0 0 10px 4px rgb(17, 106, 117);
 }
