@@ -19,7 +19,7 @@ h2 {
 }
 hr {
   padding: 10px;
-  margin: 0px -10px 0px -10px;
+  width: 100vw;
   border: none;
   list-style-type: none;
   background-color: aliceblue;

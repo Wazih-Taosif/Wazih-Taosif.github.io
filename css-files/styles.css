@@ -16,7 +16,7 @@
 }
 .homepage-flexbox {
   display: flex;
-  margin-top: 170px;
+  margin-top: 90px;
 }
 .homepage-text {
   text-align: center;
@@ -419,9 +419,10 @@ textarea {
   background-color: rgb(221, 237, 255);
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 875px) {
   .contacts-flexbox {
     flex-wrap: wrap;
+    justify-self: center;
   }
   .contacts-container {
     margin-right: 0;
