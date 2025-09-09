@@ -157,7 +157,21 @@
   }
 }
 /*Certifications code*/
+.cert-link-div {
+  justify-self: center;
+  margin-top: 50px;
+}
 
+.cert-links {
+  display: block;
+  font-size: 29px;
+  margin-bottom: 35px;
+  text-decoration: underline;
+  color: black;
+}
+.cert-links:hover {
+  color: gray;
+}
 
 /* interests page codes*/
 .image {
