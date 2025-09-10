@@ -172,6 +172,14 @@
 .cert-links:hover {
   color: gray;
 }
+.cert-badge-image {
+  width: 270px;
+}
+.cert-link_image-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
 /* interests page codes*/
 .image {
